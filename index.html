@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baseball Card HQ</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: white;
+    }
+    header {
+      padding: 25px 8%;
+      background: #080e19;
+      border-bottom: 2px solid #d62828;
+    }
+    header h1 { margin: 0; font-size: 28px; }
+    header span { color: #ef4444; }
+    nav { margin-top: 15px; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 22px;
+    }
+    .hero {
+      text-align: center;
+      padding: 85px 20px;
+      background: linear-gradient(135deg, #17263d, #101827);
+    }
+    .hero h2 { font-size: 42px; margin-bottom: 15px; }
+    .hero p { color: #cbd5e1; font-size: 18px; }
+    .section { padding: 45px 8%; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #334155;
+    }
+    .card h3 { color: #f87171; }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+      background: #080e19;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BASEBALL CARD <span>HQ</span></h1>
+    <nav>
+      <a href="#collection">My Collection</a>
+      <a href="#analytics">Player Analytics</a>
+      <a href="#tools">Collector Tools</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Baseball Card HQ</h2>
+    <p>Your home for baseball cards, player statistics and collecting.</p>
+  </section>
+
+  <section class="section" id="collection">
+    <h2>My Card Collection</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Card Inventory</h3>
+        <p>Organize and track your baseball cards.</p>
+      </div>
+      <div class="card">
+        <h3>Card Values</h3>
+        <p>Keep track of estimated card values.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="analytics">
+    <h2>Player Analytics</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Batting Statistics</h3>
+        <p>Explore player performance and hitting stats.</p>
+      </div>
+      <div class="card">
+        <h3>Pitching Statistics</h3>
+        <p>Follow strikeouts, ERA and pitching performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tools">
+    <h2>Collector Tools</h2>
+    <div class="card">
+      <h3>Content Creator</h3>
+      <p>Tools for sharing your cards and baseball content.</p>
+    </div>
+  </section>
+
+  <footer>
+    Baseball Card HQ | Built for Baseball Card Collectors
+  </footer>
+
+</body>
+</html>
